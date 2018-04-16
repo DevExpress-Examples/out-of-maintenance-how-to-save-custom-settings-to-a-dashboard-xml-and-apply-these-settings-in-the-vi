@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataConnections>
+    <DataConnection Name="nwindConnection" ProviderKey="Access97">
+      <Parameters>
+        <Parameter Name="database" Value="..\..\Data\nwind.mdb" />
+        <Parameter Name="read only" Value="1" />
+        <Parameter Name="generateConnectionHelper" Value="false" />
+      </Parameters>
+    </DataConnection>
+  </DataConnections>
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Data Source 1">
+      <DataProvider DataConnection="nwindConnection">
+        <Selection>
+          <Table Name="SalesPerson">
+            <Columns>
+              <Column Name="OrderID" />
+              <Column Name="Country" />
+              <Column Name="FirstName" />
+              <Column Name="LastName" />
+              <Column Name="ProductName" />
+              <Column Name="CategoryName" />
+              <Column Name="OrderDate" />
+              <Column Name="UnitPrice" />
+              <Column Name="Quantity" />
+              <Column Name="Discount" />
+              <Column Name="Extended Price" />
+              <Column Name="Sales Person" />
+            </Columns>
+          </Table>
+        </Selection>
+      </DataProvider>
+    </DataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Measure DataMember="Extended Price" UniqueName="DataItem0" />
+        <Dimension DataMember="CategoryName" UniqueName="DataItem1" />
+        <Dimension DataMember="Country" UniqueName="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" ShowCaption="false" DataSource="dataSource1">
+      <DataItems>
+        <Dimension DataMember="Sales Person" UniqueName="DataItem0" />
+        <Measure DataMember="Extended Price" UniqueName="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem1" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="AutoFitToContents" />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="62.629246676514029" />
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="37.370753323485971" />
+    </LayoutGroup>
+  </LayoutTree>
+  <UserData>
+    <chartFontSize>8</chartFontSize>
+  </UserData>
+</Dashboard>

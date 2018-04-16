@@ -1,0 +1,14 @@
+@model DevExpress.DashboardWeb.Mvc.DashboardSourceModel
+@Html.DevExpress().DashboardViewer(settings => {
+    settings.Name = "DashboardViewer";
+    settings.CustomJSProperties = (s, e) => {
+        System.Xml.Linq.XElement element = 
+            DevExpress.DashboardCommon.Dashboard.LoadUserDataFromXml(
+            System.Web.Hosting.HostingEnvironment.MapPath(@"~\App_Data\Dashboard.xml"));
+        string chartFontSize = element.FirstNode.ToString();
+        e.Properties["cpChartFontSize"] = Convert.ToSingle(chartFontSize);   
+    };
+    settings.ClientSideEvents.ItemWidgetCreated = "function(s, e) { OnItemWidgetCreated(e); }";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "DashboardViewerPartial" };
+    settings.ExportRouteValues = new { Controller = "Home", Action = "DashboardViewerPartialExport" };
+}).BindToSource(Model).GetHtml()

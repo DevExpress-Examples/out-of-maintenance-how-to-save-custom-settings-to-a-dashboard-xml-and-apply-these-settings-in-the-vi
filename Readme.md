@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Dashboard_AddCustomSettings/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_AddCustomSettings/Form1.vb))
+* [HomeController.cs](./CS/Dashboard_LoadCustomSettings_Mvc/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Dashboard_LoadCustomSettings_Mvc/Controllers/HomeController.vb))
+* [WidgetsCustomization.js](./CS/Dashboard_LoadCustomSettings_Mvc/Scripts/WidgetsCustomization.js) (VB: [WidgetsCustomization.js](./VB/Dashboard_LoadCustomSettings_Mvc/Scripts/WidgetsCustomization.js))
+* [WebForm1.aspx](./CS/Dashboard_LoadCustomSettings_Web/WebForm1.aspx) (VB: [WebForm1.aspx.vb](./VB/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.vb))
+* [WebForm1.aspx.cs](./CS/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.cs) (VB: [WebForm1.aspx.vb](./VB/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.vb))
+* [Form1.cs](./CS/Dashboard_LoadCustomSettings_Win/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_LoadCustomSettings_Win/Form1.vb))
+<!-- default file list end -->
 # How to save custom settings to a dashboard XML and apply these settings in the Viewer
 
 

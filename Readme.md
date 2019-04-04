@@ -6,7 +6,7 @@
 * [WidgetsCustomization.js](./CS/Dashboard_LoadCustomSettings_Mvc/Scripts/WidgetsCustomization.js) (VB: [WidgetsCustomization.js](./VB/Dashboard_LoadCustomSettings_Mvc/Scripts/WidgetsCustomization.js))
 * [_DashboardViewerPartial.cshtml](./CS/Dashboard_LoadCustomSettings_Mvc/Views/Home/_DashboardViewerPartial.cshtml)
 * [Index.cshtml](./CS/Dashboard_LoadCustomSettings_Mvc/Views/Home/Index.cshtml)
-* [WebForm1.aspx](./CS/Dashboard_LoadCustomSettings_Web/WebForm1.aspx) (VB: [WebForm1.aspx.vb](./VB/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.vb))
+* [WebForm1.aspx](./CS/Dashboard_LoadCustomSettings_Web/WebForm1.aspx) (VB: [WebForm1.aspx](./VB/Dashboard_LoadCustomSettings_Web/WebForm1.aspx))
 * [WebForm1.aspx.cs](./CS/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.cs) (VB: [WebForm1.aspx.vb](./VB/Dashboard_LoadCustomSettings_Web/WebForm1.aspx.vb))
 * [Form1.cs](./CS/Dashboard_LoadCustomSettings_Win/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_LoadCustomSettings_Win/Form1.vb))
 <!-- default file list end -->

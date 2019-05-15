@@ -1,1 +1,0 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="Dashboard_LoadCustomSettings_Mvc.MvcApplication" Language="vb" %>
